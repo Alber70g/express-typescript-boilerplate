@@ -22,6 +22,7 @@ import { publicLoader } from './loaders/publicLoader';
 import { iocLoader } from './loaders/iocLoader';
 import { graphqlLoader } from './loaders/graphqlLoader';
 import { eventDispatchLoader } from './loaders/eventDispatchLoader';
+import { passportLoader } from './loaders/passportLoader';
 
 
 bootstrapMicroframework({
@@ -40,6 +41,7 @@ bootstrapMicroframework({
         homeLoader,
         publicLoader,
         graphqlLoader,
+        passportLoader,
     ],
 })
     .then(() => banner(log))
